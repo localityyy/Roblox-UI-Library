@@ -1619,16 +1619,7 @@ function library:Init()
 	
 	self.base = self.base or self:Create("ScreenGui")
 	self.base.Name = randomString()
-	for _, v in pairs(game:GetService"CoreGui":GetChildren()) do
-		if v:IsA"ScreenGui" and v:FindFirstChild"ImageButton" and v.ImageButton:FindFirstChild"ScrollingFrame" or v.ImageButton:FindFirstChild"Frame" then
-			v:Destroy()
-		end
-	end
-	if game:GetService"CoreGui":FindFirstChild"RobloxGui" then
-		self.base.Parent = game:GetService"CoreGui".RobloxGui
-	else
-		self.base.Parent = game:GetService"CoreGui"	
-	end
+	self.base.Parent = game:GetService"CoreGui"	
 	
 	self.cursor = self.cursor or self:Create("Frame", {
 		ZIndex = 100,
