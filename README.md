@@ -5,7 +5,7 @@ A Roblox UI library mainly used for exploits
  
 # We have to define the library first.
 ```
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/alixjaffar/Roblox-UI-Library/main/main.lua", true))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/localityyy/Roblox-UI-Library/refs/heads/main/main.lua", true))()
 ```
 --To close/open the UI (after it's been initialized) use Library:Close().
  
